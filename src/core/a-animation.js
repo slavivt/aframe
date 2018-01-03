@@ -92,7 +92,7 @@ module.exports.AAnimation = registerElement('a-animation', {
         var toTemp;
         var yoyo = false;
 
-        animationValues = getAnimationValues(el, attribute, data.from || self.initialValue, data.to, currentValue);
+        animationValues = getAnimationValues(el, attribute, data.from || currentValue, data.to, currentValue);
         from = animationValues.from;
         to = animationValues.to;
         self.partialSetAttribute = animationValues.partialSetAttribute;
